@@ -3,7 +3,7 @@
 /node_modules
 .env
 /.env
-
+.clinic
 # Logs
 logs
 *.log
@@ -30,6 +30,7 @@ lerna-debug.log*
 *.sublime-workspace
 
 # IDE - VSCode
+.vscode
 .vscode/*
 !.vscode/settings.json
 !.vscode/tasks.json
