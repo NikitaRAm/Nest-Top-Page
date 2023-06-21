@@ -3,10 +3,11 @@ import { TopPageController } from './top-page.controller';
 import { ConfigService } from '@nestjs/config';
 import { TypegooseModule } from 'nestjs-typegoose';
 import { TopPageModel } from './top-page.model';
+import { TopPageService } from './top-page.service';
 
 @Module({
   controllers: [TopPageController],
-  providers: [ConfigService],
+  providers: [ConfigService, TopPageService],
   imports: [
     TypegooseModule.forFeature([
       {
