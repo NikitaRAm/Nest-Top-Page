@@ -12,8 +12,8 @@ jobs:
       - name: Publish to registy
         uses: elgohr/Publish-Docker-Github-Action@master
         with:
-          registry: docker.pkg.github.com
-          name: docker.pkg.github.com/NikitaRAm/Nest-Top-Page/Nest-Top-Page
-          username: ${{ secrets.DOCKER_USERNAME }}
-          password: ${{ secrets.DOCKER_PASSWORD }}
+          registry: ghcr.io
+          name: NikitaRAm/Nest-Top-Page/Nest-Top-Page
+          username: ${{ github.actor }}
+          password: ${{ secrets.TOKEN }}
           tags: "develop"
