@@ -1,4 +1,4 @@
-name: Publish Docker 1
+name: Publish Docker
  
 on:
   push:
@@ -12,8 +12,8 @@ jobs:
       - name: Publish to registry
         uses: elgohr/Publish-Docker-Github-Action@v5
         with:
-          registry: ghcr.io
-          name: ghcr.io/NikitaRAm/Nest-Top-Page/top-api
+          name: Nest-Top-Page/top-api
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
-          tags: "develop"
+
+
