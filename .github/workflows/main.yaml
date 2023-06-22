@@ -13,7 +13,7 @@ jobs:
         uses: elgohr/Publish-Docker-Github-Action@v5
         with:
           registry: ghcr.io
-          name: NikitaRAm/Nest-Top-Page/Nest-Top-Page
+          name: ghcr.io/NikitaRAm/Nest-Top-Page/Nest-Top-Page
           username: ${{ github.actor }}
           password: ${{ secrets.TOKEN }}
           tags: "develop"
