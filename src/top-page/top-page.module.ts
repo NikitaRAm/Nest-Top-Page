@@ -8,6 +8,7 @@ import { TopPageService } from './top-page.service';
 @Module({
   controllers: [TopPageController],
   providers: [ConfigService, TopPageService],
+  exports: [TopPageService],
   imports: [
     TypegooseModule.forFeature([
       {
