@@ -5,6 +5,7 @@
 /.env
 .clinic
 
+
 /uploads
 # Logs
 logs
@@ -30,6 +31,7 @@ lerna-debug.log*
 *.launch
 .settings/
 *.sublime-workspace
+yarn.lock
 
 # IDE - VSCode
 .vscode

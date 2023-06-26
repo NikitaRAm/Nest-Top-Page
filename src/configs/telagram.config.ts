@@ -7,8 +7,6 @@ export const getTelegramConfig = (configService: ConfigService): ITelegramOption
     if(!token) {
         throw new Error('TELEGRAM_TOKEN is not exist')
     }
-
-    console.log(configService.get('CHAT_ID') ?? '')
     return {
         token,
         chatId: configService.get('CHAT_ID') ?? ''
